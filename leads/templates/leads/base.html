@@ -111,7 +111,10 @@
                 <a href="{% url 'leads:dashboard' %}">الرئيسية</a>
                 <a href="{% url 'leads:lead_list' %}">العملاء</a>
                 <a href="{% url 'leads:add_lead' %}">عميل جديد</a>
-                <a href="{% url 'logout' %}">تسجيل خروج</a>
+                <form action="{% url 'user_logout' %}" method="POST" style="display:inline;">
+                    {% csrf_token %}
+                    <button type="submit">تسجيل خروج</button>
+                </form>
             {% else %}
                 <a href="{% url 'login' %}">تسجيل دخول</a>
                 <a href="{% url 'register' %}">تسجيل جديد</a>
