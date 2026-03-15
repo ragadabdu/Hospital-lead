@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ye%b@8^6a=!r$t#o+82pj(4pz)4zpu5c@9mcx3l(@81c%5+_85
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["hospital-lead.onrender.com", "localhost", "127.0.0.1"]
 
 
 # Application definition
@@ -114,8 +114,6 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
-
-LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 
